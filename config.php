@@ -1,5 +1,5 @@
 <?php
-const DB_HOSTNAME = '89.108.83.110';
+const DB_HOSTNAME = 'mysqlis.radiotech.su';
 const DB_USERNAME = 'is341_16_admin';
 const DB_PASSWORD = 'wXkETD6bKA';
 const DB_DATABASE = 'is341_16_1';

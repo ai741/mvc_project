@@ -1,6 +1,12 @@
 <?php
 function view($name, $arg = []) {
     ob_start();
+
+    if (isset($arg) && $arg != [])
+        foreach ($arg as $key => $value){
+            $$key = $value;
+
+        }
     # Создание переменной error для записей ошибок
     $error = ($arg['errors'] ?? []);
 
@@ -48,6 +54,7 @@ function view($name, $arg = []) {
                 </div>';
         }
     };
+
     include_once 'views/' . $name . '.php';
     $content = ob_get_contents();
     ob_clean();
