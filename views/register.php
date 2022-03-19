@@ -19,17 +19,17 @@
                 </div>
                 <div class="mb-3">
                     <label for="inputLogin" class="form-label">Ваш логин:</label>
-                    <input type="text" name="login" <?= $isError('login', true) ?> id="inputLogin" placeholder="Укажите логин" required>
+                    <input type="text" name="login" <?= $isError('login', true) ?> id="inputLogin" placeholder="Укажите логин">
                     <?= $isError('login') ?>
                 </div>
                 <div class="mb-3">
                     <label for="inputPassword" class="form-label">Ваш пароль:</label>
-                    <input type="password" name="password" <?= $isError('password', true) ?> id="inputPassword" placeholder="Укажите пароль:" required>
+                    <input type="password" name="password" <?= $isError('password', true) ?> id="inputPassword" placeholder="Укажите пароль:" >
                     <?= $isError('password') ?>
                 </div>
                 <div class="mb-3">
                     <label for="inputPasswordConfirmed" class="form-label">Ваш повтор пароля:</label>
-                    <input type="password" name="password_confirmed" <?= $isError('password_confirmed', true) ?> id="inputPasswordConfirmed" placeholder="Укажите пароль повторно:" required>
+                    <input type="password" name="password_confirmed" <?= $isError('password_confirmed', true) ?> id="inputPasswordConfirmed" placeholder="Укажите пароль повторно:" >
                     <?= $isError('password_confirmed') ?>
                 </div>
                 <button type="submit" class="btn btn-primary">Регистрация</button>
